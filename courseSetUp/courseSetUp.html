@@ -10,13 +10,12 @@
 
 <body>
 <div class="container">
-
+    <!--Sets up top bar-->
     <section id="topbar">
         <div class="logo"><img src="../courseSetUp/temperary logo.jpg" alt="logo"></div>
         <div class="welcome"><h1>Welcome to Course Set-Up</h1></div>
-
     </section>
-
+    <!--Sets up left side menu bar-->
     <section id="leftbar">
         <div class="sidebar">
             <header><img src="../courseSetUp/small Q.png" alt="samllQ"> Menu</header>
@@ -26,15 +25,17 @@
             </ul>
         </div>
     </section>
-
+    <!--Sets up main bar displaying current time and greets user (professor)-->
     <section id="mainbar">
         <div class="studentInfo">
             <div>Hi, Professor: Wallace Wells. </div>
             <div>Today is : <span id="datetime"></span></div>
         </div>
+        <!--Campus Image as background for web page-->
         <img class="background" src="../courseSetUp/campus pic.jpg" alt="">
         <div class="course_list">
             <div class="course-container">
+                <!--Parameters for user to create a course to be added to the web page-->
                 <h2>Course Set-Up: </h2>
                 <div class="create">
                     <label for="courseName" class="courseOp">Course Name:</label>
@@ -56,15 +57,15 @@
                     <input type="text" id="deadLine" class="courseOp">
                     <label for="desc" class="courseOp">Description:</label>
                     <input type="text" id="desc" class="courseOp">
+                    <!--Confirmation button to create new course based on parameters above (THEY ALL MUST BE FILLED OUT)-->
+                    <!--TODO: If one detail is missing or incorrect , the webpage must warn the user and prevent them from... -->
+                    <!--TODO: (continued)...creating the course until any mistakes are corrected-->
                     <input type="button" id="addCourse" value="Add Course">
                 </div>
-
             </div>
         </div>
     </section>
 </div><!--end of container-->
-
 <script src="../courseSetUp/courseSetUp_script.js"></script>
-
 </body>
 </html>
