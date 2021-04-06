@@ -1,0 +1,102 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Course Management System</title>
+        <link rel="stylesheet" href="course management_style.css">
+        <!-- make resposible page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <section id="topbar">
+                <div class="logo"><img src="temperary logo.jpg" alt="logo"></div>
+                <div class="welcome"><h1>Welcome to Course Management System.</h1></div>
+                
+            </section>
+
+            <section id="leftbar">
+                <div class="sidebar">
+                    <header><img src="small Q.png" alt="samllQ"> Menu</header>
+                    <ul>
+                        <li><a href="#"><i class="menu search-link"></i>Course Setup</a></li>
+                        <li><a href="#"><i class="mebu home-link"></i>Home</a></li>
+                    </ul>
+                </div>    
+            </section>
+
+            <section id="mainbar">            
+                <div class="studentInfo">
+                    <div>Hi, Professor Brad Pitt. </div>
+                    <div>Today is : <span id="datetime"></span></div>
+                </div>
+                <img class="background" src="campus pic.jpg" alt="">
+                <div class="course_list">
+                    <div class="course-container">
+                        <h2>Your Current Course Schedule: </h2>
+                        <div style="overflow-x:auto;">
+                            <table class="class-Tom" >
+                                <thead>
+                                <tr>
+                                    <th class="course-item">Class</th>
+                                    <th class="course-item">Description</th>
+                                    <th class="course-item">Times</th>
+                                    <th class="course-item">Classroom</th>
+                                    <th class="course-item">Credits</th>
+                                    <th class="course-item">Students</th>
+                                    <th class="course-item">Edit</th>
+                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="course-detail">CS 331</td>
+                                    <td class="course-detail">Database System</td>
+                                    <td class="course-detail">MoWe 8:00PM - 9:15PM</td>
+                                    <td class="course-detail">Online</td>
+                                    <td class="course-detail">3</td>
+                                    <td class="course-detail">30</td>
+                                    <td class="course-detail"><input type="submit" id="Edit" value="Edit"></td>
+                                </tr>
+                                <tr>
+                                    <td class="course-detail">CS 340</td>
+                                    <td class="course-detail">Operating System</td>
+                                    <td class="course-detail">TuTh 3:10PM - 4:25PM</td>
+                                    <td class="course-detail">Online</td>
+                                    <td class="course-detail">3</td>
+                                    <td class="course-detail">25</td>
+                                    <td class="course-detail"><input type="submit" id="Edit" value="Edit"></td>
+                                </tr>
+                                <tr>
+                                    <td class="course-detail">CS 355</td>
+                                    <td class="course-detail">Internet and Web Technologies</td>
+                                    <td class="course-detail">Tu 8:00PM - 10:50PM</td>
+                                    <td class="course-detail">Online</td>
+                                    <td class="course-detail">3</td>
+                                    <td class="course-detail">100</td>
+                                    <td class="course-detail"><input type="submit" id="Edit" value="Edit"></td>
+                                </tr>
+                                <tr>
+                                    <td class="course-detail">Math 247</td>
+                                    <td class="course-detail">Linear Programming &amp; Gaming Theory</td>
+                                    <td class="course-detail">MoWe 1:40PM - 2:55 PM</td>
+                                    <td class="course-detail">Online</td>
+                                    <td class="course-detail">3</td>
+                                    <td class="course-detail">50</td>
+                                    <td class="course-detail"><input type="submit" id="Edit" value="Edit"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div><!--end of container-->
+
+        <script src="course management_script.js"></script>
+
+    </body>
+</html>
