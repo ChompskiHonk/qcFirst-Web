@@ -1,0 +1,268 @@
+/*globa selector: 
+  box-sizing: browser accounts for any border, padding in the values*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*set background picture to top left*/
+body {
+    background-image: url('temperary\ logo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: 30%;
+}
+
+/*to get entire content to be center*/
+html, body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: #fff;
+
+}
+
+/*set the size of wrapper (going to wrap the forms)*/
+.wrapper {
+    max-width: 390px;
+    max-height: 700px;
+    background-color: darkgray;
+    padding: 30px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+    overflow: hidden; /*set the overflow context to be hidden*/
+}
+
+/*set title login sign up to be flex that display text in a row*/  
+.wrapper .title-text {
+    display: flex;
+    width: 200%;
+}
+
+/*give font, color, animation to form title*/
+.wrapper .title-text .title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*anything that is overflow to wrapper will be hidden*/
+.wrapper .form-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*the whole slide buttom setting*/
+.form-container .slide-control {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+/*the word login, sign up on slide buttom*/
+.slide-control .slide {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;    
+    z-index: 1;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+
+.slide-control .signup {
+    color: black;
+}
+
+/*create a colored block with no text that only move between login and sign up*/ 
+.slide-control .slide-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0; /*show on toppest area*/
+    border-radius: 5px;
+    background-color: magenta;
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*Subsequent-sibling Combinator*/
+#signup:checked ~ .slide-tab {
+    left: 50%;
+}
+
+#signup:checked ~ .signup {
+    color: white;
+}
+
+#signup:checked ~ .login {
+    color: black;
+}
+
+/*cancel the dot symbol*/
+input[type="radio"] {
+    display: none;
+}
+
+/*form display, set to flex*/
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
+/*set animation to forms*/
+.form-container .form-inner form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*adjust the position;size of input boxes*/
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*adjust the position of input message, including placeholder*/
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightcyan;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+/*when click the boxes, red focus shows up*/
+.form-inner form .field input:focus {
+    border-color: brown;
+}
+
+/*setting of Forget password link*/
+.form-inner form .forget-password {
+    margin-top: 5px;
+}
+
+.forget-password, .forget-password a {
+    font-size: 18px;
+}
+
+.forget-password img {
+    width: 15px;
+    padding-top: 10px;
+    
+}
+
+.form-inner form .forget-password a {
+    color: purple;
+    text-decoration: none;
+}
+
+/*setting of sign up link, differ from slide buttom of sign up*/
+.form-inner form .sign-link a {
+    color: purple;
+    text-decoration: none;
+}
+
+.sign-link, .sign-link a {
+    font-size: 18px;
+}
+.sign-link img {
+    width: 15px;
+    padding-top: 20px;
+    
+}
+
+/*bottom puc setting*/
+.bottom_pic img {
+    border-radius: 8px;
+    width: 630px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*when mouse moves to link, shows the underline*/
+.form-inner form .forget-password a:hover {
+    text-decoration: underline;
+}
+
+.form-inner form .sign-link a:hover {
+    text-decoration: underline;
+}
+
+.form-inner form .sign-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*setting of submit bottom, here is login and sign up*/
+.form-inner form .field input[type="submit"] {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0%;
+    border: none;
+    cursor: pointer;
+}
+
+/* describe the general category of a device*/
+/*tablet*/
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 700px;
+        background-color: darkgray;
+        padding: 30px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+        overflow: hidden;
+    }
+
+    body {
+        background-image: url('temperary\ logo.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top left;
+        background-size: 20%;
+
+    }
+
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    .wrapper {
+        max-width: 700px;
+        background-color: darkgray;
+        padding: 30px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+        overflow: hidden;
+    }
+    
+    body {
+        background-image: none;
+    }
+
+    .bottom_pic img {
+        display: none;
+    }
+}

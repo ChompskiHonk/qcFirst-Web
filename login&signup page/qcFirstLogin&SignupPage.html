@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- language: english, reading from left to right -->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to qcFirst, Please Login or Sign-Up the Account.</title>
+        <link rel="stylesheet" href="LS_style.css">
+        <!-- make resposible page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- wrapper contains a container -->
+        <div class="wrapper">
+            <!-- form name -->
+            <div class="title-text">
+                <div class="title login"><h3>Login</h3></div>
+                <div class="title signup"><h3>Sign-Up</h3></div>
+            </div>
+            <!-- container inlcudes slide buttom and form inner part-->
+            <div class="form-container">
+                <!-- slide control buttom -->
+                <div class="slide-control">
+                    <input type="radio" name="slider" id="login" checked>
+                    <input type="radio" name="slider" id="signup" checked>
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Sign Up</label>
+                    <div class="slide-tab"></div>
+                </div>
+
+                <!-- inner includes login form and sign up form -->
+                <div class="form-inner">
+                    <!-- create a login form. asking inputs: email and password. The data stored place is not defined yet-->
+                    <form action="TODO" class="loginForm">
+                        <div class="field">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" minlength="8" maxlength="12" title="The length has to be 8-12" required>
+                        </div>
+                        <div class="forget-password"><a href="#"><img src="small Q.png" alt="smallQ">Forget Password?</a></a></div>
+                        <!-- login buttom -->
+                        <div class="field">
+                            <input type="submit" value="Login">
+                        </div>
+                        <!-- second sign up buttom -->
+                        <div class="sign-link"><img src="small Q.png" alt="smallQ">Don't have an account? <a href="#">Click here to sign up!</a></div>
+                        <div class="bottom_pic"><img src="background.jpg" alt="background"></div>
+                    </form>
+                    <!-- create a sign up form. asking inputs: fullname, email, qcID, password, and confirmed password . The data stored place is not defined yet-->
+                    <form action="TODO" class="signupForm">
+                        <div class="field">
+                            <input type="text" id="fullName" placeholder="Full Name"  pattern="[a-zA-Z\s\-]+" title="Eg: Tom Cruise or Yo-Yo Ma" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="qcFirst_ID" placeholder="qcFirst ID"  pattern="[0-9]{8}" title="8 Digit number Eg: 23549871" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password" placeholder="Password" minlength="8" maxlength="12" title="The length has to be 8-12" onChange="onChange()" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" id="passwordConfirm" placeholder="Enter Your Password Again" minlength="8" maxlength="12" title="The length has to be 8-12" onChange="onChange()" required>
+                        </div>
+                        <!-- sign up buttom -->
+                        <div class="field">
+                            <input type="submit" id="submit_sign" value="Sign Up">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="LS_script.js"></script>
+    </body>
+</html>
+
+<!-- reference: 1. https://www.youtube.com/watch?v=V8PU_geaCCU&ab_channel=CodingNepal 2.zybook -->
