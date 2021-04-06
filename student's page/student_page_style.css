@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+#topbar {
+    display: flex;
+    position: fixed;
+    background-color: #900;
+    width: 100%;
+    height: 15%;
+}
+
+.logo img {
+    width: 230px;
+    height: 115px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    text-align:center;
+    padding-top: 40px;
+    padding-left: 300px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #042331;
+}
+
+.sidebar header {
+    font-size: 25px;
+    color: white;
+    text-align:center;
+    line-height: 70px;
+    background-color: #063146;
+    user-select: none;
+}
+
+.sidebar header img {
+    width: 23px;
+    margin-right: 8px;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+#mainbar {
+    top: 15%;
+    left: 15%;
+    background-color:white;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    position:fixed;
+}
+
+#mainbar .studentInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-align: left; 
+    line-height: 70px;
+    background-color: #063;
+    
+}
+
+#mainbar .background {
+    opacity: 0.35;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+}
+
+.student-profile {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.student-profile header {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.student-profile ul li {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+
+/* describe the general category of a device*/
+/*tablet*/
+@media (width: 768px) {
+
+    .logo img {
+        width: 115px;
+        height: 155px;
+    }
+
+    .welcome h1 {
+        padding-top: 50px;
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    .sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .sidebar header {
+        font-size: 20px;
+    }
+    
+    .sidebar header img {
+        width: 13px;
+        margin-right: 8px;
+    }
+}
+
+@media (width: 1024px) {
+    
+    body {
+        display: grid;
+        height: auto;
+        width: 80%;
+        background-color: #fff;
+    }
+
+    .logo img {
+        width: 155px;
+        height: 203px;
+    }
+
+    .welcome h1 {
+        padding-top: 75px;
+        padding-left: 150px;
+    }
+
+    .sidebar ul a {
+        font-size: 15px;
+    }
+    
+    #mainbar .weclome_Info {
+        font-size: 18px;  
+    }
+
+    #mainbar .background {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    #topbar {
+        display: none;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 10%;
+        background-color: #042331;
+    }
+
+    .sidebar header {
+        display: none;
+    }
+    
+    .sidebar li {
+        display: inline-flex;
+    }
+
+    .sidebar ul a {
+        font-size: 15px;
+        border-top: none;
+        border-bottom: none;
+        line-height: 30px;
+    }
+
+    #mainbar {
+        top: 10%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #mainbar .studentInfo {
+        padding-inline: 3px;
+        font-size: 10px;
+    }
+
+    #mainbar .course-container h2 {
+        font-size: 12px;
+    }
+
+    #mainbar .search-box .field {
+        font-size: 12px;
+        color:crimson;
+        background-color: darkgray;
+        width: 80%;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 2px;
+    }
+
+    .field input[type="submit"] {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .shopping-contrl input[type="submit"] {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    
+}
+
+@media (max-width: 300px) {
+
+    .sidebar ul a {
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    #mainbar .studentInfo {
+        padding-inline: 3px;
+        font-size: 8px;
+    }
+}
+
