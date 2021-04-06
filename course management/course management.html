@@ -7,16 +7,14 @@
         <!-- make resposible page -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
     <body>
         <div class="container">
-
+            <!--Sets up top bar-->
             <section id="topbar">
                 <div class="logo"><img src="../course management/temperary logo.jpg" alt="logo"></div>
-                <div class="welcome"><h1>Welcome to Course Management System.</h1></div>
-                
+                <div class="welcome"><h1>Welcome to Course Management System.</h1></div>                
             </section>
-
+            <!--Sets up left side menu bar-->
             <section id="leftbar">
                 <div class="sidebar">
                     <header><img src="../course management/small Q.png" alt="samllQ"> Menu</header>
@@ -26,17 +24,19 @@
                     </ul>
                 </div>    
             </section>
-
+            <!--Sets up main bar displaying current time and greeting user-->
             <section id="mainbar">            
                 <div class="studentInfo">
                     <div>Hi, Professor Brad Pitt. </div>
                     <div>Today is : <span id="datetime"></span></div>
                 </div>
+                <!--Campus image as background for web page-->
                 <img class="background" src="../course management/campus pic.jpg" alt="">
                 <div class="course_list">
                     <div class="course-container">
                         <h2>Your Current Course Schedule: </h2>
                         <div style="overflow-x:auto;">
+                            <!--Display courses that user (professor) is currently involved in-->
                             <table class="class-Tom" >
                                 <thead>
                                 <tr>
@@ -46,8 +46,7 @@
                                     <th class="course-item">Classroom</th>
                                     <th class="course-item">Credits</th>
                                     <th class="course-item">Students</th>
-                                    <th class="course-item">Edit</th>
-                                    
+                                    <th class="course-item">Edit</th>                                    
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -90,13 +89,10 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </section>
         </div><!--end of container-->
-
         <script src="../course management/course management_script.js"></script>
-
     </body>
 </html>
