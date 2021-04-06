@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shopping cart_style.css">
+    <!-- make resposible page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="container">
+
+    <section id="topbar">
+        <div class="logo"><img src="temperary logo.jpg" alt="logo"></div>
+        <div class="welcome"><h1>Shopping Cart</h1></div>
+
+    </section>
+    <!-- Bar with menu options on left side of page(on top if on phone)-->
+    <section id="leftbar">
+        <div class="sidebar">
+            <header><img src="small Q.png" alt="samllQ"> Menu</header>
+            <ul>
+                <li><a href="#"><i class="menu enrollment-link"></i>Enrollment</a></li>
+                <li><a href="#"><i class="menu course-search"></i>Search Course</a></li>
+                <li><a href="#"><i class="mebu home-link"></i>Home</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--Basic student information -->
+    <section id="mainbar">
+        <div class="studentInfo">
+            <div>Hi, Student: 8564289. Name: Tom Cruise. </div>
+            <div>Today is : <span id="datetime"></span></div>
+        </div>
+        <img class="background" src="campus pic.jpg" alt="">
+        <div class="course_list">
+            <div class="course-container">
+                <h2>Select a course and choose to remove or enroll: </h2>
+                <!--Search parameters -->
+                <div style="overflow-x:auto;" class="options">
+                    <input type="button" value="Remove">
+                    <input type="button" value="Enroll">
+                    <!--TODO: find a way to display classes chosen to be in shopping cart prior. -->
+                    <!--TODO: (continued) have user select a class that can be removed from the cart or enrolled by the user. -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div><!--end of container-->
+
+<script src="shopping cart_script.js"></script>
+
+</body>
+</html>
