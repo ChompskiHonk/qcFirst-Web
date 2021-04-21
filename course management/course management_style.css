@@ -9,6 +9,7 @@ body {
     width: 100%;
     background-color: #fff;
 }
+
 /*Top bar */
 #topbar {
     display: flex;
@@ -29,6 +30,7 @@ body {
     padding-top: 40px;
     padding-left: 300px;
 }
+
 /*Side menu bar */
 .sidebar {
     position: fixed;
@@ -70,6 +72,7 @@ body {
 ul li:hover a {
     padding-left: 50px;
 }
+
 /*main bar displaying user info */
 #mainbar {
     top: 15%;
@@ -112,6 +115,7 @@ ul li:hover a {
 #mainbar .course-container h2 {
     padding-bottom: 10px;
 }
+
 /*Table displaying courses instructor is involved in */
 .class-Tom  {
     border-collapse:collapse;
