@@ -9,7 +9,7 @@ body {
     width: 100%;
     background-color: #fff;
 }
-
+/*Top bar of website*/
 #topbar {
     display: flex;
     position: fixed;
@@ -29,7 +29,7 @@ body {
     padding-top: 40px;
     padding-left: 300px;
 }
-
+/*Side Menu */
 .sidebar {
     position: fixed;
     top: 15%;
@@ -70,7 +70,7 @@ body {
 ul li:hover a {
     padding-left: 50px;
 }
-
+/*main bar content */
 #mainbar {
     top: 15%;
     left: 15%;
